@@ -1,6 +1,6 @@
-package com.ll.sbbmission.question;
+package com.ll.sbbmission.domain.question;
 
-import com.ll.sbbmission.answer.Answer;
+import com.ll.sbbmission.domain.answer.Answer;
 import jakarta.persistence.*;
 import lombok.Data;
 
