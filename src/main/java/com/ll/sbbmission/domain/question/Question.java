@@ -1,6 +1,7 @@
 package com.ll.sbbmission.domain.question;
 
 import com.ll.sbbmission.domain.answer.Answer;
+import com.ll.sbbmission.domain.user.SiteUser;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -24,4 +25,7 @@ public class Question {
 
     @OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE)
     private List<Answer> answerList;
+
+    @ManyToOne
+    private SiteUser author;
 }
