@@ -2,9 +2,11 @@ package com.ll.sbbmission.domain.question;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class QuestionForm {
     @NotEmpty(message="제목을 입력해주세요.")
     @Size(max=200)
