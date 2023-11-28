@@ -24,7 +24,7 @@ repositories {
 dependencies {
 
 
-    //데이타베이스
+    //데이터베이스
     runtimeOnly 'com.h2database:h2'
 
     //롬복
@@ -42,6 +42,9 @@ dependencies {
 
     //validation
     implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    //마크다운
+    implementation 'org.commonmark:commonmark:0.21.0'
 
     //스프링 시큐리티
     implementation 'org.springframework.boot:spring-boot-starter-security'
